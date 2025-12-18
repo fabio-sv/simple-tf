@@ -4,6 +4,6 @@ resource "local_file" "foo" {
 }
 
 output "file_content" {
-  description = "content of ${path.module}/foo.bar"
+  description = "content of foo.bar"
   value       = local_file.foo.content
 }
